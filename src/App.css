@@ -1,0 +1,119 @@
+/* Reset some basics */
+body {
+  margin: 0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background: radial-gradient(circle at top left, #0f2027, #203a43, #2c5364);
+  color: #fff;
+}
+
+/* Main container */
+.auth-container {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  backdrop-filter: blur(6px);
+}
+
+/* Glassy box */
+.auth-form-container {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  padding: 40px;
+  border-radius: 16px;
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  width: 100%;
+  max-width: 400px;
+  backdrop-filter: blur(10px);
+}
+
+/* Form */
+.auth-form {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Headline */
+.auth-form h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #00ffe5;
+  font-weight: 600;
+}
+
+/* Inputs */
+.auth-input {
+  padding: 12px;
+  margin: 10px 0;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  background: rgba(255, 255, 255, 0.1);
+  color: #fff;
+  transition: background 0.3s ease;
+}
+
+.auth-input::placeholder {
+  color: #ccc;
+}
+
+.auth-input:focus {
+  background: rgba(255, 255, 255, 0.2);
+  outline: none;
+}
+
+/* Button */
+.auth-button {
+  margin-top: 5px;
+  padding: 12px;
+  background: linear-gradient(45deg, #00c9ff, #92fe9d);
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  color: #000;
+  transition: transform 0.2s ease;
+}
+
+.auth-button:hover {
+  transform: scale(1.05);
+}
+
+/* Links */
+.auth-link,
+.auth-toggle-link {
+  font-size: 13px;
+  color: #a0f0ff;
+  text-decoration: none;
+  margin-top: 8px;
+  cursor: pointer;
+  display: inline-block;
+}
+
+.auth-link:hover,
+.auth-toggle-link:hover {
+  text-decoration: underline;
+}
+
+/* Text below form */
+.auth-toggle-text {
+  text-align: center;
+  margin-top: 16px;
+}
+
+/* Error/Success */
+.auth-error {
+  color: #ff6b6b;
+  font-size: 14px;
+  margin-top: 5px;
+  text-align: center;
+}
+
+.auth-success {
+  color: #7bed9f;
+  font-size: 14px;
+  margin-top: 10px;
+  text-align: center;
+}
