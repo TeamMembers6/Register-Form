@@ -2,12 +2,14 @@
 import { createRoot } from 'react-dom/client'
 import './index.css'
 import './App.css'
-
-// import App from './App.jsx'
+import App from './App.jsx'
+import { HashRouter as Router } from 'react-router-dom';
 
 createRoot(document.getElementById('root')).render(
-<>
-  <h1>These is heading.</h1>
-</>
+
+<Router>
+  <App />
+</Router>
+
   
 )
